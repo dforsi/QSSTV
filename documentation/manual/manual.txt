@@ -523,7 +523,7 @@ There are two prerequisites
 <br><br>
 - Tone: frequency of the CW tone
 - Words per Minute: CW transmission speed
-- Text To Send: this text will be send at the end of an image transmission if the option is enabled.
+- Text To Send: this text will be sent at the end of an image transmission if the option is enabled.
 
 
 
@@ -541,7 +541,7 @@ There are two prerequisites
 - Repeater TX mode: the mode the repeater will use to send the images
 - Tx Delay(sec):  Wait x seconds after reception of an valid image before repeating the image
 - DRM Image Size (kB) : The maximum size of the image used in DRM mode
-- Idle Image[1-4]: images send by the repeater if there is no activity for more than the interval time
+- Idle Image[1-4]: images sent by the repeater if there is no activity for more than the interval time
 - Idle Template:template that will be super-imposed on the idle images
 - Repeater Template: template that will be super-imposed on the repeated(received) images
 
@@ -562,7 +562,7 @@ This is used to save the received images to an FTP server. The images will also 
 - Image store:
   image1 to image30: The files will be saved under the generic name imageXX, where xx ranges from 1 to 30. When a new image arrives, the old images are shifted down
   (i.e. image29 becomes image30, image28 becomes image 29 etc ..) and the new one is stored as image1.
-- add image format extension: if checked, the xetension is added to the filename (e.g. image2.png)
+- add image format extension: if checked, the extension is added to the filename (e.g. image2.png)
 - file name: the image (or other type of file) is stored with a file name derived from the mode (SSTV) or from the file name transmitted in DRM.
 
 Note: This FTP server is unrelated to the FTP server for Hybrid Mode.
@@ -590,9 +590,9 @@ You will either see a pop-up with "Connection OK" or an error message showing th
 <br><br>
 - Enable Reception in Hybrid Mode: allows reception of hamDRM in hybrid mode. If not enabled, hybrid mode files will not be shown or stored.
 - FTP Port: default 21 (cannot be modified at this moment for compatibility with EasyPal)
-- Send RX Notifications in Hybrid mode: The notifications will be send to the server used by the sender
+- Send RX Notifications in Hybrid mode: The notifications will be sent to the server used by the sender
 - Host: hostname of the ftp server you will use
-- Host: the ftp server where the hybrid images will be send to.
+- Host: the ftp server where the hybrid images will be sent to.
 - Login: the login name on the server
 - Password: will be encrypted
 - Directory: default empty
@@ -643,7 +643,7 @@ Hamlib Data Command allows you to send a "raw command" that will be executed whe
 
 - Hex: if checked the text is interpreted as hex values else it will be interpreted as a regular ASCII string.
 
-- Note 1: you can put any valid raw command here, it will be send on every frequency change
+- Note 1: you can put any valid raw command here, it will be sent on every frequency change
 
 - Note 2: Flrig does not support FM data modes.
 
@@ -776,7 +776,7 @@ SSTV tab:
 - Auto-slant: A lot of times the receive clock of the local station is not equal to the transmit clock of the sending station. The result is a slanted image.
 If The auto-slant is activated, the program will automatically try to compensate for those clock differences.
 You may notice a momentary freeze of the image build-up while the program is recalculating the image.
-- Auto-save: When the program detect the end of the image, the image will be saved to disk.
+- Auto-save: When the program detects the end of the image, the image will be saved to disk.
 - Save if Complete %: Auto-save if the image is at least completed for the indicated percentage.
 - Mode: you can either select AUTO or one of the supported SSTV modes.
 When AUTO is selected, the program will try to determine the mode of the image it is receiving.
@@ -895,7 +895,7 @@ Receive status
 	- green: correctly received
 	- yellow: already received
 
-When an data stream is received , the program will try to decode it and save it in the receive image directory.
+When an data stream is received, the program will try to decode it and save it in the receive image directory.
 If the data stream is a text file it will be displayed in a separate window. Just click OK to close it.
 
 \image html waterfall.png
@@ -1045,8 +1045,8 @@ will be accessible again when loaded.
 
 <br>
 To create an object, click on the left menu to select the type of object (e.g circle) and then click on the canvas where you want the object positioned.
-Just click on an item to select it. A outline of the item will be shown by a dashed line.
-If you hoover over the object you will see the cursor change to a hand-icon (in the middle of the object) to move it, or to a resize-icon if you are on a border.
+Just click on an item to select it. An outline of the item will be shown by a dashed line.
+If you hover over the object you will see the cursor change to a hand-icon (in the middle of the object) to move it, or to a resize-icon if you are on a border.
 
 The attributes (line colour, fill colour, gradients etc ..) that are active in the top menu will be used to create the item.
 Object have also a z-component, i.e they can be in front our behind another object. This can be changed by right clicking on the item and use the Arrange selection.
@@ -1158,8 +1158,8 @@ will be accessible again when loaded.
 
 <br>
 To create an object, click on the left menu to select the type of object (e.g circle) and then click on the canvas where you want the object positioned.
-Just click on an item to select it. A outline of the item will be shown by highlighting the item.
-If you hoover over the object you will see the cursor change to an arrow_forbidden icon if the item is locked;
+Just click on an item to select it. An outline of the item will be shown by highlighting the item.
+If you hover over the object you will see the cursor change to an arrow_forbidden icon if the item is locked;
 <br>
 A selected item will be highlighted and resizing handles and rotate handle are shown.
 Text items only have the rotate handle. Resizing of text is only done through the font settings.
@@ -1248,7 +1248,7 @@ For the use of macro's see \ref macros
 \page macros Macro Text
 
 You can use macros to expand text add runtime. When layouting templates remember that % macros will be replaced by the final text.
-<br> Example: %v will expand to QSSTV.9.4.3.
+<br> Example: %%v will expand to QSSTV.9.4.3.
 So leave enough room to place the final text.
 
 Following macro's are supported:<br>
@@ -1289,7 +1289,7 @@ The repeater acts like a parrot, it is not just retransmitting the audio.
 When the repeater is inactive for a time (idle time) specified in the repeater configuration, 1 of 4 images will be transmitted.
 The overlay can be specified in the configuration.
 
-The retransmitted images are send in the mode selected in the Transmit window.
+The retransmitted images are sent in the mode selected in the Transmit window.
 For SSTV the mode can be the same as the mode of the received image.
 
 The repeater does not allow for cross-mode (i.e SSTV repeated in DRM or vice versa)
@@ -1308,7 +1308,7 @@ Many thanks to all testers and users of QSSTV - too many to name them all.
 - DRM:<br>
 I started developing the DRM functionality in QSSTV after studying the excellent work Ties Bos (PA0MBO) did on txrxamadrm.<br>
 see: http://www.pa0mbo.nl/ties/public_html/hamradio/txamadrm/index.html<br>
-The software is NOT based on the hamdrm.dll but on DIORAMA (http://nt.eit.uni-kl.de/static/diorama/index.html)<br>and adapted by PA0MBO. For more information , see the manual of txrxamadrm.
+The software is NOT based on the hamdrm.dll but on DIORAMA (http://nt.eit.uni-kl.de/static/diorama/index.html)<br>and adapted by PA0MBO. For more information, see the manual of txrxamadrm.
 
 This document contains references to Easypal (by VK4AES). Erik Sundstrup was kind enough to give me permission to use the extended BSR functionality and the DRM Hybrid mode.
 Easypal was used extensively to test my program. <br>
